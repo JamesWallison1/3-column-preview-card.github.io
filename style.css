@@ -1,0 +1,121 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+}
+
+.card-1{
+    width: 200px;
+    height: 400px;
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: var(--Bright-orange);
+    text-align: left;
+}
+
+.card-2{
+    width: 200px;
+    height: 400px;
+    max-width: 100%;
+    padding: 50px;
+    background-color: var(--Dark-cyan);
+    text-align: left;
+}
+
+.card-3{
+    width: 200px;
+    height: 400px;
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--Very-dark-cyan);
+    text-align: left;
+}
+
+h1{
+    font-family: "Big Shoulders Display";
+    font-size: 2.3rem;
+    color: white;
+}
+
+p{
+    font-family: "Lexend Deca";
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--Transparent-white);
+    line-height: 1.8;
+}
+
+.button-1{
+    padding: 12px 30px 12px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: var(--Bright-orange);
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+.button-2{
+    padding: 12px 30px 12px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: var(--Dark-cyan);
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+.button-3{
+    padding: 12px 30px 12px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color: var(--Very-dark-cyan);
+    font-family: "Lexend Deca";
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+button:hover{
+    background: var(--Very-light-gray);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        flex-direction: column;
+    }
+    .card-1{
+        border-radius: 10px 10px 0px 0px;
+    }
+    .card-3 {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
